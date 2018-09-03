@@ -99,7 +99,7 @@ const declareWeapon = function() {
 
 changeWeapon('Revolver');
 const verdict = declareWeapon();
-console.log(verdict);
+console.log(verdict);   // The weapon is the Revolver as const is not preventing modifying contents of any mutatable objects, like arrays or objects.
 ```
 
 #### Episode 6
@@ -123,7 +123,7 @@ const declareMurderer = function () {
 
 changeMurderer();
 const verdict = declareMurderer();
-console.log(verdict);
+console.log(verdict);  //The murderer is Mrs. White. const only prevents reassignment to the variable???
 ```
 
 #### Episode 7
@@ -153,7 +153,7 @@ const declareMurderer = function() {
 
 changeMurderer();
 const verdict = declareMurderer();
-console.log(verdict);
+console.log(verdict);  //The murderer is Mr. Green.
 ```
 
 #### Episode 8
@@ -192,7 +192,7 @@ const declareWeapon = function() {
 
 changeScenario();
 const verdict = declareWeapon();
-console.log(verdict);
+console.log(verdict); //The weapon is Candle Stick as const sceenario is mutable
 ```
 
 #### Episode 9
@@ -209,7 +209,7 @@ const declareMurderer = function() {
 }
 
 const verdict = declareMurderer();
-console.log(verdict);
+console.log(verdict);   //The murderer is Professor Plum. the reassignement of of let murderer is valid only within the if statement
 ```
 
 ### Extensions
