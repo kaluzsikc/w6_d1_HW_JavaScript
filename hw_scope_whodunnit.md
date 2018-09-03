@@ -25,7 +25,7 @@ const declareMurderer = function() {
 }
 
 const verdict = declareMurderer();
-console.log(verdict);
+console.log(verdict); // The murderer is Miss Scarlet.
 ```
 
 #### Episode 2
@@ -34,7 +34,7 @@ console.log(verdict);
 const murderer = 'Professor Plum';
 
 const changeMurderer = function() {
-  murderer = 'Mrs. Peacock';
+  murderer = 'Mrs. Peacock'; //const cannot be reassigned
 }
 
 const declareMurderer = function() {
@@ -57,10 +57,10 @@ const declareMurderer = function() {
 }
 
 const firstVerdict = declareMurderer();
-console.log('First Verdict: ', firstVerdict);
+console.log('First Verdict: ', firstVerdict); // The murderer is Mrs. Peacock as murderer is reassigned within the function.
 
 const secondVerdict = `The murderer is ${murderer}.`;
-console.log('Second Verdict: ', secondVerdict);
+console.log('Second Verdict: ', secondVerdict); //The murderer is Professor Plum as initial variable is set to "Professor Plum"
 ```
 
 #### Episode 4
@@ -76,8 +76,8 @@ const declareAllSuspects = function() {
 }
 
 const suspects = declareAllSuspects();
-console.log(suspects);
-console.log(`Suspect three is ${suspectThree}.`);
+console.log(suspects); //The suspects are Miss Scarlet, Professor Plum, Colonel Mustard. as third suspect was reassigned.
+console.log(`Suspect three is ${suspectThree}.`); //Suspect three is Mrs. Peacock. Colonel Mustard is only declared in previous function
 ```
 
 #### Episode 5
